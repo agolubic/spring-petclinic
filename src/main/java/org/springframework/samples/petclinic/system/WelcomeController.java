@@ -38,4 +38,9 @@ class WelcomeController {
 	public Object test() { return new Object();}
 
 
+	@GetMapping("/test_v2")
+	@ResponseBody
+	public Integer testMas213SSA() { return "Not a number";}
+
+
 }
