@@ -19,6 +19,7 @@ package org.springframework.samples.petclinic.system;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 class WelcomeController {
@@ -29,18 +30,12 @@ class WelcomeController {
 	}
 
 	@GetMapping("/about")
-	public String about() { return "My name is Earl";}
-
-
-
-	@GetMapping("/test")
 	@ResponseBody
-	public Object test() { return new Object();}
+	public ModelAndView about() {
 
 
-	@GetMapping("/test_v2")
-	@ResponseBody
-	public Integer testMas213SSA() { return "Not a number";}
+		return new ModelAndView();
+	}
 
 
 }
